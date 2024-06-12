@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link para arquivos CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Formulário de Login e Registro</title>
     <!-- Script de validação -->
     <script>
@@ -109,7 +109,7 @@
 
     <header>
         <div class="container">
-            <div class="logo"><img src="rock.jpg" alt="Logo"></div>
+            <div class="logo"><img src="img/logo.png" alt="Logo"></div>
             <div class="menu">
                 <nav>
                     <a href="index.html">Home</a>
@@ -130,9 +130,26 @@
                 <button><i class="fa-brands fa-instagram"></i></button>
                 <button><i class="fa-brands fa-facebook-f"></i></button>
                 <button><i class="fa-brands fa-youtube"></i></button>
+                <label class="switch">
+                    <input type="checkbox" checked id="dark-mode-toggle">
+                    <span class="slider"></span>
+                  </label>
             </div>
         </div>
     </header>
+    <label class="switch">
+        <input type="checkbox" checked id="dark-mode-toggle">
+      </label>
+      
+      <script>
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+      
+        toggleButton.addEventListener('click', () => {
+          body.classList.toggle('dark-mode');
+        });
+      </script>
+      
 
     <section id="formulario" class="form-section">
         <div class="container">
