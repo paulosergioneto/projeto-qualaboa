@@ -1,50 +1,38 @@
-@media screen and (max-width: 1110px) {
+
+@media screen and (max-width: 768px) {
+    
     .menu,
     .social {
-        display: none;
+      display: none;
     }
-
+  
     .logo {
-        width: 200px;
-        height: 100px;
+      width: 150px; 
+      height: auto; 
     }
+  
 
     #btn-menu,
     #menu-mobile {
-        display: block;
+      display: flex;
+      flex-direction: column; 
     }
-
+  
+    
     #menu-mobile.active {
-        height: calc(100vh - 77px);
-        visibility: visible;
+      height: calc(100vh - 77px);
+      visibility: visible;
     }
-}
-
-@media screen and (max-width: 900px) {
-    .img-desktop {
-        display: none;
+  
+    
+    .img {
+      background-image: url("image.jpg"); 
+      background-size: cover; 
+      background-position: center; 
     }
-
-    .img-mobile {
-        display: block;
-    }
-
+  
+   
     .nav-auto,
     .nav-manual {
-        margin-top: 60%;
-    }
-}
-
-/* Ajustes responsivos para Dropdown */
-@media screen and (max-width: 900px) {
-    .dropdown-content {
-        position: static;
-        box-shadow: none;
-        width: auto;
-    }
-    .dropdown:hover .dropdown-content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-}
+      margin-top: 1rem; 
+  
